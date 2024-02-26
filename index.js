@@ -13,3 +13,7 @@ app.use(express.static('public'));
 app.listen(8080,() => {
     console.log("Servidor Iniciado")
 });
+
+app.get("/",(req,res)=>{
+    res.render('index')
+});
